@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Jimmy Pinkard's Portfolio Website homepage" />
+    <title>Jimmy Pinkard</title>
+
+    <link type="image/jpg" rel="icon" th:href="@{/images/Headshot.jpg}" />
+    <link type="text/css" rel="stylesheet" th:href="@{/css/style.css}" />
+    <script type="text/javascript" th:src="@{/javascript/layout/header.js}" defer></script>
+    <script type="text/javascript" th:src="@{/javascript/layout/nav.js}" defer></script>
+    <script type="text/javascript" th:src="@{/javascript/layout/footer.js}" defer></script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <header-component pageTitle="Home"></header-component>
+    <navbar-component></navbar-component>
+    <main class="main-content">
+      <p>
+        Hello my name is Jimmy and welcome to my website. You can find more information about me in the <a href="/about" class="in-text-link">About Me page</a>.
+        If you wanted to look at my personal projects, you can go to the <a href="/projects" class="in-text-link">Projects page</a>. If you wanted to look at my
+        previous work, you can go to the <a href="/work" class="in-text-link">My Work page</a>. If you wanted to find my contact information you can go to the
+        <a href="/projects" class="in-text-link">Contact page</a>. If you would like to see a resume you can download mine
+        <a th:href="@{/downloads/Jimmy_Pinkard_Resume.pdf}" class="in-text-link" download>here</a>. I look forward to working with you.
+      </p>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>
