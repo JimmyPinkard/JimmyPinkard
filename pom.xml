@@ -8,14 +8,18 @@
         <version>2.6.7</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>com.jimmy</groupId>
-    <artifactId>web</artifactId>
+    <artifactId>JimmyPinkard</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>web</name>
-    <description>web</description>
+    <name>JimmyPinkard</name>
+    <description>JimmyPinkard</description>
+    <packaging>jar</packaging>
+
     <properties>
         <java.version>17</java.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
