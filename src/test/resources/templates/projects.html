@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Jimmy Pinkard's Portfolio Website projects page"/>
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
+  <title>Jimmy Pinkard Projects</title>
+
+  <link type="image/jpg" rel="icon" th:href="@{/images/me20.jpg}" />
+  <link type="text/css" rel="stylesheet" th:href="@{/css/style.css}" />
+  <script type="text/javascript" th:src="@{/javascript/layout/header.js}" defer></script>
+  <script type="text/javascript" th:src="@{/javascript/layout/nav.js}" defer></script>
+  <script type="text/javascript" th:src="@{/javascript/layout/footer.js}" defer></script>
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <header-component pageTitle="Projects"></header-component>
+  <navbar-component></navbar-component>
+  <main class="main-content">
+    <p>
+      My <a href="https://github.com/JimmyPinkard" class="in-text-link">GitHub</a> page.
+    </p>
+  </main>
+  <footer-component></footer-component>
+</body>
+</html>

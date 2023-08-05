@@ -1,0 +1,91 @@
+html {
+    padding: 0;
+    margin: 0;
+    font-family: san-francisco, serif;
+    font-size: 30px;
+    color: #4f4f4f;
+    --primary: purple;
+    --secondary: black;
+}
+.main-container {
+    display: grid;
+    grid-template-areas: "header" "navbar" "content" "footer";
+}
+.header {
+    grid-area: header;
+    color: var(--secondary);
+    background-color: var(--primary);
+}
+#page-title, #site-title {
+    display: flex;
+    justify-content: center;
+}
+.navbar {
+    grid-area: navbar;
+}
+.navbar-links {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.bar-link {
+    color: var(--primary);
+    text-decoration: none;
+    padding: 5px;
+}
+.bar-link:hover {
+    color: var(--secondary);
+}
+.main-content {
+    grid-area: content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.main-content p {
+    max-width: 66ch;
+    line-height: 35px;
+    padding: 10px;
+}
+.in-text-link {
+    text-decoration: none !important;
+    color: #00f !important;
+}
+.in-text-link:hover {
+    color: var(--secondary) !important;
+}
+.in-text-link:visited {
+    color: purple !important;
+}
+.contact-info
+{
+    list-style: none;
+}
+#email-send
+{
+    display: flex;
+    justify-content: center;
+}
+form
+{
+    color: var(--secondary);
+    background-color: var(--primary);
+}
+@media (max-width: 600px) {
+    html {
+        font-size: 20px;
+    }
+    .bar-link {
+        font-size: 15px;
+    }
+    .main-content p {
+        max-width: 40ch;
+        line-height: 20px;
+        padding: 5px;
+    }
+    #Headshot {
+        height: 30%;
+        width: 40%;
+    }
+}

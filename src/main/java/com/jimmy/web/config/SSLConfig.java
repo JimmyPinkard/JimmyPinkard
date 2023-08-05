@@ -1,4 +1,4 @@
-package com.jimmy.web;
+package com.jimmy.web.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,10 +12,13 @@ public class SSLConfig
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception
     {
         return http
+                /*
                 .requiresChannel(channel ->
                         channel.anyRequest().requiresSecure())
                 .authorizeRequests(authorize ->
-                        authorize.anyRequest().permitAll()).csrf().disable()
+                        authorize.anyRequest().permitAll())
+                .csrf().disable()
+                */
                 .build();
     }
 }
