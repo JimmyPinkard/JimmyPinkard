@@ -1,5 +1,6 @@
 package com.jimmy.web;
 
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -28,5 +29,11 @@ public class Router {
     public String about()
     {
         return "about";
+    }
+
+    @GetMapping(value = "/robots.txt", produces = MediaType.TEXT_PLAIN_VALUE)
+    public String robots()
+    {
+        return "robots.txt";
     }
 }
