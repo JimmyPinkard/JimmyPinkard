@@ -29,10 +29,4 @@ public class Router {
     {
         return "about";
     }
-
-    @GetMapping("/contact")
-    public String contact()
-    {
-        return "contact";
-    }
 }

@@ -1,5 +1,4 @@
-FROM openjdk:17.0.2-bullseye
-COPY target/JimmyPinkard-0.0.1-SNAPSHOT.jar /JimmyPinkard.jar
-COPY ~/* /ssl/
-CMD echo
-CMD java -jar /JimmyPinkard.jar
+FROM openjdk:21-bookworm
+WORKDIR /app
+COPY target/JimmyPinkard-0.0.1-SNAPSHOT.jar /app/JimmyPinkard.jar
+ENTRYPOINT ["java", "-jar", "/app/JimmyPinkard.jar"]

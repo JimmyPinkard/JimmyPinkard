@@ -4,8 +4,7 @@ class Nav extends HTMLElement
     {
         super();
         const pageList = [{id: "1", title: "Home", href: "/"}, {id: "2", title: "Projects", href: "/projects"},
-            {id: "3", title: "My Work", href: "/work"}, {id: "4", title: "About Me", href: "/about"},
-            {id: "5", title: "Contact", href: "/contact"}];
+            {id: "3", title: "My Work", href: "/work"}, {id: "4", title: "About Me", href: "/about"}]
         const pages = pageList.map((page) =>
         {
             const link = `<li><a href=${page.href} class="bar-link">${page.title}</a></li>`;
