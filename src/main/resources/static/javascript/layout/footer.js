@@ -3,14 +3,11 @@ class Footer extends HTMLElement
     constructor()
     {
         super();
-        const contactInfo = ["Name: Jimmy Pinkard", "Phone: 803-269-2552", "Email: jimmypinkard7@gmail.com"];
-        const contact = contactInfo.map((info) =>
-        {
-            return `<li>${info}</li>`;
-        }).join("");
         this.innerHTML = `<footer class="footer">
         <ul class="contact-info">
-            ${contact}
+            <li>Name: Jimmy Pinkard III</li>
+            <li>Phone: <a href="tel:8032692552" class="in-text-link">803-269-2552</a></li>
+            <li>Email: <a href="mailto:jimmypinkard7@gmail.com" class="in-text-link">jimmypinkard7@gmail.com</a></li>
         </ul>
     </footer>
     `;

@@ -89,3 +89,8 @@ form
         width: 40%;
     }
 }
+
+.pdf-view {
+    width: 50%;
+    height: 500px;
+}
